@@ -3,8 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Failure page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   </head>
   <body>
     <h1>failed</h1>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Failure!</h1>
+        <p class="lead">Oh no something went wrong please go back to login screen.</p>
+        <form action="/failure" method="post">
+          <button class="btn btn-lg btn-warning" type="submit" name="button">Try Again</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
